@@ -1,0 +1,251 @@
+// Variables
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "F1Regular";
+    src: url(../media/fonts/Formula1-Regular.ttf);
+}
+
+@font-face {
+    font-family: "F1Bold";
+    src: url(../media/fonts/Formula1-Bold.ttf);
+}
+
+.F1Titulo {
+    font-family: "F1Bold";
+    text-align: center;
+    background-image: linear-gradient(#000000, #110000);
+    color: white;
+}
+.navbar {
+    width: 100vw;
+}
+nav {
+    margin-left: auto;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+}
+
+.TituloPrincipal {
+    font-size: 300%;
+    margin: 4px;
+    justify-content: space-around;
+}
+
+.Titulo2 {
+    font: 200%;
+    margin: 4px 10px 10px 10px;
+    text-decoration: underline;
+    justify-content: space-around;
+}
+
+.TituloSecundario {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+li {
+    list-style: none;
+}
+.Menu {
+    margin: 20px;
+    a {
+    color: white;
+    text-decoration: none;
+}
+}
+ 
+.footer {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
+    background-size: contain;
+    background-color: black;
+    color: white;
+    font-family: "F1Bold";
+    bottom: 0px;
+    position: fixed;
+    width: 90vw;
+
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin-bottom: 100px;
+    background-image: linear-gradient(#110000, #000000);
+}
+
+.LetraBlanca {
+    color: white;
+}
+
+.footertext {
+    margin: 15px;
+    width: 25%;
+}
+
+h3 {
+    font-family: "F1Bold";
+}
+
+h4 {
+    font-family: "F1Regular";
+}
+
+.datos {
+    display: block;
+    font-family: "F1Regular";
+    margin: 5px 5px 5px 10px;
+}
+
+.Tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 769px) {
+    .mobile-first {
+        flex-direction: row;
+    }
+
+}
+
+.FijoTarjeta {
+    border-radius: 20%;
+    border-width: 15px;
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+}
+
+.Verstappen {
+    background-color: #12142d;
+    color: #FFEA00;
+    border: solid #ff0026;
+}
+
+.Hamilton {
+    background-color: #c6c6c6;
+    color: #111111;
+    border: solid #00a19c;
+}
+
+.LeClerc {
+    background-color: #a6051a;
+    color: #FFEB00;
+    border: solid #111111;
+}
+
+.ParrafoNoticia {
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hipervinculo {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.acordion-letra {
+    color: black;
+}
+
+.Carreras {
+    display: flex;
+    flex-direction: row;
+}
+
+.VideosCarreras {
+    width: 750px;
+    height: 500px;
+}
+
+@media (max-width: 426px) {
+    .Mobile-First-Videos {
+        width: 319px;
+        height: 180px;
+    }
+    .Mobile-First-Center {
+        text-align: center;
+    }
+}
+
+.Mobile-First-Texto {
+    text-align: left;
+}
+
+.contacto {
+    font-family: "F1Bold";
+    display: block;
+    list-style: none;
+    margin: 5px;
+}
+
+.contacto:hover {
+    transform: rotateZ(360deg);
+    transition: 2s;
+}
+
+.OrdenNoticias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Noticias {
+    height: 400px;
+    width: 425px;
+    padding: 5px;
+    border: solid;
+    border-color: #a6051a;
+    border-width: 10px;
+    overflow: scroll;
+    color: white;
+    margin: 20px;
+    width: 1fr;
+}
+
+
+.Encuesta {
+    font-family: "F1Regular";
+}
+
+.VerVerstappen {
+    width: 200px;
+}
+
+.FotoVers {
+    background-image: url(../media/images/MaxVerstappen.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 70%;
+}
+
+.Mobile-Last {
+    max-width: 425px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Carrusel {
+    width: 500px;
+    margin: auto;
+}
+
