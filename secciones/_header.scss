@@ -1,0 +1,26 @@
+.F1Titulo {
+    font-family: "F1Bold";
+    text-align: center;
+    color: white;
+}
+
+.TituloPrincipal {
+    font-size: 300%;
+    justify-content: space-around;
+}
+
+.Titulo2 {
+    font: 200%;
+    text-decoration: underline;
+    justify-content: space-around;
+}
+.Menu {
+    border: solid white 2px;
+     &:hover {
+        box-shadow: inset 0px 5px 10px 0px crimson;
+     }
+    a {
+    color: white;
+    text-decoration: none;
+}
+}
