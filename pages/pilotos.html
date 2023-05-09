@@ -10,25 +10,26 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="../media/images/LogoF1.png">
-    <title>F1 Fan page</title>
+    <title>F1 Fans Latinoamericanos | Pilotos</title>
 </head>
 
 <body>
-    <header class="F1Titulo row" id="header">
+    <header class="F1Titulo" id="header">
         <nav class="navbar navbar-dark bg-black">
             <a class="navbar-brand" href="../index.html">
-                <img src="../media/images/LogoF1.png" width="30" height="30" class="d-inline-block align-top "
+                <img src="../media/images/LogoF1.png" width="30" height="30" class="d-inline-block align-top"
                     alt="F1Logo">
                 Inicio
             </a>
         </nav>
-        <div class="row">
-            <h1 class="TituloPrincipal animate__animated animate__bounceIn">F1</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="TituloPrincipal animate__animated animate__bounceIn">F1</h1>
+            </div>
+            <div class="row">
+                <h2 class="Titulo2 animate__animated animate__bounceIn">Pagina oficial latinoamericana de fans</h2>
+            </div>
         </div>
-        <div class="row">
-            <h2 class="Titulo2 animate__animated animate__bounceIn">Pagina oficial latinoamericana de fans</h2>
-        </div>
-
         <nav>
             <div class="container-fluid">
                 <div class="row">
@@ -41,25 +42,26 @@
                     <div class="Menu col">
                         <a href="../pages/ultimacarrera.html">Ultima carrera</a>
                     </div>
-                    <div class="Menu col">
-                        <a href="https://www.formula1.com/" target="_blank">Pagina oficial</a>
-                    </div>
+
                     <div class="Menu col">
                         <a href="../pages/contacto.html">Contactanos</a>
                     </div>
                 </div>
             </div>
         </nav>
-        </nav>
     </header>
     <main>
-        <div>
-            <h3 class="row mobile-first Tarjetas">Busqueda de pilotos</h3>
-            <form class="Tarjetas mobile-first" action="#" method="get">
-                <input type="text" placeholder="Nombre" name="Nombre">
-                <input type="number" placeholder="Número de auto" name="Numero">
-                <input type="submit">
-            </form>
+        <div class="container-fluid">
+            <div class="row">
+                <h3 class="Tarjetas">Busqueda de pilotos</h3>
+            </div>
+            <div class="row">
+                <form class="Tarjetas mobile-first" action="#" method="get">
+                    <input type="text" placeholder="Nombre" name="Nombre">
+                    <input type="number" placeholder="Número de auto" name="Numero">
+                    <input type="submit">
+                </form>
+            </div>
         </div>
         <div class="Tarjetas mobile-first">
             <div class="Verstappen FijoTarjeta">
@@ -106,15 +108,22 @@
         </div>
     </main>
     <footer class="footer">
-        <ul class="row">
-            <li class="footertext footer1 col"><a href="https://twitter.com/F1" target="_blank">Twitter oficial</a></li>
-            <li class="footertext col"><a href="https://www.facebook.com/Formula1/" target="_blank">Facebook oficial</a>
-            </li>
-            <li class="footertext col"><a href="https://www.instagram.com/f1/?hl=es" target="_blank">Instagram
-                    oficial</a>
-            </li>
-            <li class="footertext col"><a href="#header">Ir al principio de pagina</a></li>
-        </ul>
+        <nav class="container-fluid">
+            <div class="row">
+                <div class="footertext col">
+                    <a href="https://www.formula1.com/" target="_blank">Pagina oficial</a>
+                </div>
+                <div class="footertext col"><a href="https://twitter.com/F1" target="_blank">Twitter oficial</a>
+                </div>
+                <div class="footertext col"><a href="https://www.facebook.com/Formula1/" target="_blank">Facebook
+                        oficial</a>
+                </div>
+                <div class="footertext col"><a href="https://www.instagram.com/f1/?hl=es" target="_blank">Instagram
+                        oficial</a>
+                </div>
+                <div class="footertext col"><a href="#header">Ir al principio de pagina</a></div>
+            </div>
+        </nav>
     </footer>
 </body>
 

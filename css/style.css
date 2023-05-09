@@ -25,24 +25,14 @@
   justify-content: space-around; }
 
 .Menu {
-  border: solid white 2px; }
+  background-image: linear-gradient(#000000, #300000);
+  border: double crimson 1px;
+  border-radius: 10px; }
   .Menu:hover {
     box-shadow: inset 0px 5px 10px 0px crimson; }
   .Menu a {
     color: white;
     text-decoration: none; }
-
-body {
-  background-color: #000000;
-  color: white; }
-
-.TituloSecundario {
-  text-align: center;
-  color: white;
-  padding: 20px; }
-
-li {
-  list-style: none; }
 
 .footer {
   background-image: url();
@@ -53,29 +43,49 @@ li {
   background-color: black;
   color: white;
   font-family: "F1Bold";
-  bottom: 0px;
   position: fixed;
-  width: 100%; }
+  bottom: 0px;
+  width: 100vw; }
 
 .footer a {
   color: white;
   text-decoration: none; }
 
-main {
-  margin-bottom: 100px;
-  background-image: linear-gradient(#110000, #000000); }
-
-.LetraBlanca {
-  color: white; }
-
 .footertext {
   margin: 15px;
-  width: 25%; }
+  display: flex;
+  justify-content: space-around; }
 
-h3 {
-  font-family: "F1Bold"; }
+.OrdenNoticias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
 
-h4 {
+.Noticias {
+  height: 400px;
+  width: 425px;
+  padding: 5px;
+  border: solid;
+  border-color: #a6051a;
+  border-width: 10px;
+  overflow: scroll;
+  color: white;
+  margin: 20px;
+  width: 1fr; }
+
+.ParrafoNoticia {
+  margin: 5px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.FotoVers {
+  background-image: url(../media/images/MaxVerstappen.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: 70%; }
+
+.Encuesta {
   font-family: "F1Regular"; }
 
 .datos {
@@ -83,15 +93,22 @@ h4 {
   font-family: "F1Regular";
   margin: 5px 5px 5px 10px; }
 
+.VerVerstappen {
+  width: 200px; }
+
+.TituloSecundario {
+  text-align: center;
+  color: white;
+  padding: 20px; }
+
+.acordion-letra {
+  color: black; }
+
 .Tarjetas {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-
-@media (min-width: 769px) {
-  .mobile-first {
-    flex-direction: row; } }
 
 .FijoTarjeta {
   border-radius: 20%;
@@ -115,35 +132,23 @@ h4 {
   color: #FFEB00;
   border: solid #111111; }
 
-.ParrafoNoticia {
-  margin: 5px;
-  color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
-
-.hipervinculo {
-  text-decoration: underline;
-  font-weight: bold; }
-
-.acordion-letra {
-  color: black; }
-
-.Carreras {
-  display: flex;
-  flex-direction: row; }
-
-.VideosCarreras {
-  width: 750px;
-  height: 500px; }
-
-@media (max-width: 426px) {
-  .Mobile-First-Videos {
-    width: 319px;
-    height: 180px; }
-  .Mobile-First-Center {
-    text-align: center; } }
-
-.Mobile-First-Texto {
+.TituloCarrera {
+  padding-top: 20px;
   text-align: left; }
+
+.VideoResponsive {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 40.25%;
+  padding-top: 30px;
+  position: relative; }
+
+.VideoResponsive iframe, .video-responsive object, .video-responsive embed {
+  height: 90%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 90%; }
 
 .contacto {
   font-family: "F1Bold";
@@ -152,44 +157,26 @@ h4 {
   margin: 5px; }
 
 .contacto:hover {
-  transform: rotateZ(360deg);
+  transform: rotate(360deg);
   transition: 2s; }
 
-.OrdenNoticias {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
-
-.Noticias {
-  height: 400px;
-  width: 425px;
-  padding: 5px;
-  border: solid;
-  border-color: #a6051a;
-  border-width: 10px;
-  overflow: scroll;
-  color: white;
-  margin: 20px;
-  width: 1fr; }
-
-.Encuesta {
-  font-family: "F1Regular"; }
-
-.VerVerstappen {
-  width: 200px; }
-
-.FotoVers {
-  background-image: url(../media/images/MaxVerstappen.png);
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
-  background-size: 70%; }
-
-.Mobile-Last {
-  max-width: 425px;
-  flex-direction: column;
-  flex-wrap: wrap; }
-
 .Carrusel {
-  width: 500px;
+  width: 50vw;
   margin: auto; }
+
+body {
+  background-color: #000000;
+  color: white; }
+
+li {
+  list-style: none; }
+
+main {
+  padding-bottom: 100px;
+  background-image: linear-gradient(#110000, #000000); }
+
+h3 {
+  font-family: "F1Bold"; }
+
+h4 {
+  font-family: "F1Regular"; }
