@@ -30,3 +30,9 @@ h4 {
     font-family: "F1Regular";
 }
 
+@media (min-width: 769px) {
+    .mobile-first {
+        flex-direction: row;
+    }
+
+}
